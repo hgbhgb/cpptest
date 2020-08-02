@@ -1,7 +1,8 @@
+#include <iostream>
 #include <memory>
 
 int main()
 {
-	std::shared_ptr<char> ptr = nullptr;
+	std::cout << "__cplusplus : " << __cplusplus << std::endl;
 	return 0;	
 }
