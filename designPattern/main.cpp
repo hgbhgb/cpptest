@@ -7,6 +7,23 @@ T sum(const T &a, const T &b)
 	return a+b;
 }
 
+template <typename T>
+class CTest
+{
+public:
+    CTest(T &a)
+    {
+        m_value = a;
+    }
+    virtual ~CTest(){}
+    void Show()
+    {
+        std::cout << m_value << std::endl;
+    }
+protected:
+private:
+    T m_value;
+};
 int main()
 {
 	std::cout << "__cplusplus : " << __cplusplus << std::endl;
@@ -22,6 +39,10 @@ int main()
 	std::string str1("ab");
 	std::string str2("cd");
     std::cout << "sum string : " << sum(str1, str2) << std::endl;
+
+    std::string i = "3.1415926";
+    CTest<std::string> test(i);
+    test.Show();
 
 	return 0;	
 }
