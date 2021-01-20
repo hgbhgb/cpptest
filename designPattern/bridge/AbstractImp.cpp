@@ -1,17 +1,17 @@
 #include "AbstractImp.h"
 
-CAbstractImp::CAbstractImp(IImplement *impl)
+CAbstract::CAbstract(IImplement *impl)
 {
     m_impl = impl;
 }
 
-CAbstractImp::~CAbstractImp()
+CAbstract::~CAbstract()
 {
     
 }
-void CAbstractImp::func()
+void CAbstract::func()
 {
-    std::cout << "CAbstractImp::func" << std::endl;
+    std::cout << "CAbstract::func" << std::endl;
     m_impl->funcImpl();
 }
 

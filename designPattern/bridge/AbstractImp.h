@@ -2,11 +2,11 @@
 #include "Abstract.h"
 #include "Implement.h"
 
-class CAbstractImp : public IAbstract
+class CAbstract : public IAbstract
 {
 public:
-    CAbstractImp(IImplement *impl);
-    ~CAbstractImp();
+    CAbstract(IImplement *impl);
+    ~CAbstract();
     virtual void func();
 protected:
 private:
