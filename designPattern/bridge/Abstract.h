@@ -11,3 +11,4 @@ protected:
     IImplement *m_impl;
 private:
 };
+
