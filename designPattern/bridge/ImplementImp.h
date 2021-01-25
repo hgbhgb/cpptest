@@ -4,7 +4,7 @@
 class CImplement : public IImplement
 {
 public:
-    CImplement()
+    CImplement();
     ~CImplement();
     virtual void funcImpl();
 protected:

@@ -1,3 +1,4 @@
+#include <iostream>
 #include "Implement.h"
 
 IImplement::IImplement()

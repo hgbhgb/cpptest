@@ -7,8 +7,8 @@ CFLAGS += -I ./
 ALL : test
 
 test : $(OBJ)
-	g++ $(CFLAGS) $< -o $@    
-$(OBJ) : $(SRC)
+	g++ $(CFLAGS) $^ -o $@    
+$(OBJ) : %.o : %.cpp
 	g++ $(CFLAGS) -c $< -o $@
 clean :
 	rm -rf test $(OBJ)

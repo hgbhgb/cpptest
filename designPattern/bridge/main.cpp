@@ -1,5 +1,7 @@
 #include "Abstract.h"
-#include "CImplement.h"
+#include "AbstractImp.h"
+#include "Implement.h"
+#include "ImplementImp.h"
 
 int main()
 {
