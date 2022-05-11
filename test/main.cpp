@@ -53,6 +53,7 @@ void testEncrypt()
 int main()
 {
 	std::cout << "__cplusplus : " << __cplusplus << std::endl;
+    std::cout << __FILE__ << ":" << __LINE__  << "----" << __FUNCTION__ << std::endl;
 
 	int a = 1;
 	int b = 2;
